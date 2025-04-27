@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Cocos Creator | NumberPuzzle</title>
+  <title>Cocos Creator | QYCreator</title>
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
@@ -41,7 +41,6 @@
   <link rel="icon" href="favicon.8de18.ico"/>
 
 
-  <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
 
   <script 
     async 
@@ -60,8 +59,8 @@
           if (window.telegramAnalytics) {
             console.log("✅ Telegram Analytics SDK 已加载");
             window.telegramAnalytics.init({
-                token: 'eyJhcHBfbmFtZSI6Ildvb2RCbG9ja3MiLCJhcHBfdXJsIjoiaHR0cHM6Ly90Lm1lL1dvb2RCbG9ja1B1enpsZUJvdCIsImFwcF9kb21haW4iOiJodHRwczovL2xpcGFuNDc2LmdpdGh1Yi5pby9tdWt1YWkvIn0=!A6XCSRe+ie/kv54Ujsi2Qc21jkGOY3xzK3Y2VhpbQnU=', // 这里填入 "Your token for recording"
-                appName: 'WoodBlocks', // 你的游戏名称
+                token: 'eyJhcHBfbmFtZSI6IkJsb2NrUHV6emxlIiwiYXBwX3VybCI6Imh0dHBzOi8vdC5tZS9CbG9ja1B1enpsZU1hc3RlckJvdCIsImFwcF9kb21haW4iOiJodHRwczovL2xpcGFuNDc2LmdpdGh1Yi5pby9mYW5na3VhaXBpbmcvIn0=!7g+pxHPd131rGdsNlTm90RMd8RvPtunjZS1gloj3Aps=', // 这里填入 "Your token for recording"
+                appName: 'BlockPuzzle', // 你的游戏名称
             });
         } else {
             console.error("❌ Telegram Analytics SDK 未加载！");
@@ -92,7 +91,9 @@
       alert("Please open this game inside Telegram!");
     }
   </script>
-  
+
+
+
 </head>
 <body>
   <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
@@ -102,9 +103,9 @@
     </div>
   </div>
 
-<script src="src/settings.97d49.js" charset="utf-8"></script>
+<script src="src/settings.7dfb2.js" charset="utf-8"></script>
 
-<script src="main.591df.js" charset="utf-8"></script>
+<script src="main.bf24d.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
@@ -130,9 +131,9 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.ec163.js', function () {
+    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.0f046.js', function () {
       if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-        loadScript(debug ? 'physics.js' : 'physics-min.9bae2.js', window.boot);
+        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
       }
       else {
         window.boot();
